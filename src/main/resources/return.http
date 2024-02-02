@@ -1,0 +1,15 @@
+POST http://localhost:8080/api/v1/return
+Content-Type: application/json
+
+[
+  {
+    "title": "Spider Man",
+    "extraDays": "2"
+  },
+  {
+    "title": "Spider Man 2",
+    "extraDays": "4"
+  }
+]
+
+###
