@@ -19,6 +19,7 @@ public class RentController {
 
     public RentController(RentService rentService) {
         this.rentService = rentService;
+        System.out.println("RentController Initialized");
     }
 
     @PostMapping()

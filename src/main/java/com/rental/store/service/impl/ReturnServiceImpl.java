@@ -3,6 +3,7 @@ package com.rental.store.service.impl;
 import com.rental.store.domain.Film;
 import com.rental.store.dto.*;
 import com.rental.store.repository.FilmRepository;
+import com.rental.store.service.RentService;
 import com.rental.store.service.ReturnService;
 import org.springframework.stereotype.Service;
 
@@ -13,9 +14,11 @@ import java.util.List;
 public class ReturnServiceImpl implements ReturnService {
 
     private final FilmRepository filmRepository;
+    private final RentService rentService;
 
-    public ReturnServiceImpl(FilmRepository filmRepository) {
+    public ReturnServiceImpl(FilmRepository filmRepository, RentService rentService) {
         this.filmRepository = filmRepository;
+        this.rentService = rentService;
     }
 
     @Override
